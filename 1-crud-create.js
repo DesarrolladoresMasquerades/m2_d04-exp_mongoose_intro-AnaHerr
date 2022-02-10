@@ -15,4 +15,11 @@ Cat
 
 // create multiple documents in the cats collection
 
-Cat
+Cat.create({
+    name: "Garfield",
+    age: 15,
+    color: "orange",
+    //this will break the schema BUT Mongo won't complain
+    //It's YOUR responsibility to adhere to the schema
+    friends: ["marco", "carol", "carlos", "Yin"]
+})
